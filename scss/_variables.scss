@@ -1,0 +1,33 @@
+// Colors
+
+$white: #fff;
+$light-grey: #d9d9d9;
+$grey: #7a7a7a;
+$dark-grey: #1e1e1e;
+$black: #000;
+$red: #cc0001;
+
+//Font-families
+
+$florana: "Florana", sans-serif;
+$cormorant: "Cormorant Garamond", serif;
+
+//Font sizes
+
+$font-sizes: (
+  "h1": 2.875rem,
+  "h2": 2.25rem,
+  "h3": 1.875rem,
+  "h4": 1.125rem,
+  "normal": 1.125rem,
+  "small": 0.875rem,
+  "big": 2rem,
+  "biggest": 10rem,
+);
+
+// fluid fonts for various screens sizes
+
+$min_width: 320px;
+$max_width: 1200px;
+$min_font: 12px;
+$max_font: 30px;
