@@ -9,7 +9,6 @@
 
 //////tooltip 
 function showTooltip(event) {
-
     const target = event.target
     target.previousElementSibling.classList.toggle('hidden')
 }
@@ -34,3 +33,18 @@ tooltip.parentNode.insertBefore(tooltipSpan, tooltip)
     tooltip.addEventListener("mouseover", showTooltip)
     tooltip.addEventListener('mouseout', hideTooltip)
 })
+
+// show menu only on the way up and not on titlw
+function showMenu() {
+    
+    let refOffset = 0;
+    const navHeight = 48;
+    const nav = document.querySelector('nav')
+
+    if 
+
+
+
+
+}
+
