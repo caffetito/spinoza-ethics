@@ -8,3 +8,164 @@
 ul {
   list-style: none;
 }
+
+body {
+  font-family: $cormorant;
+  font-size: size(normal);
+  text-align: justify;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  line-height: 1.5;
+
+  //   display: grid;
+  //   grid-template-columns: 75% 25%;
+  //   grid-template-rows: auto;
+  //   grid-template-areas:
+  //     "title title"
+  //     "main aside";
+}
+
+ol {
+  list-style-type: upper-roman;
+  text-align: left;
+  padding-top: 10%;
+}
+
+nav {
+  width: 100%;
+  background: white;
+  padding: 0 4em;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  grid-area: main;
+  padding: 3rem;
+}
+
+aside {
+  grid-area: aside;
+  font-size: 16px;
+  font-style: italic;
+  margin: 15rem auto;
+  max-width: 95%;
+  padding: 4rem 1.5rem;
+  border-left: 1px solid black;
+  //box-shadow: -15px 0px 17px -7px rgba(0, 0, 0, 0.2);
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: size(h1);
+  letter-spacing: 1.5rem;
+}
+
+h2 {
+  font-size: size(h2);
+  letter-spacing: 1rem;
+  &:first-letter {
+    font-size: size(h2) + 0.5rem;
+  }
+}
+
+h3 {
+  font-size: size(h3);
+  letter-spacing: 1rem;
+  padding-top: size(h2);
+  &:first-letter {
+    font-size: size(h3) + 0.5rem;
+  }
+}
+
+p {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.title {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+}
+
+.author {
+  letter-spacing: 1.5rem;
+  font-size: size(h4);
+  font-weight: 600;
+}
+
+.subhead {
+  font-size: size(h3);
+}
+
+.subsubhead {
+  font-size: size(small);
+  color: $dark-grey;
+}
+
+.secsubhead {
+  font-size: size(normal);
+  font-style: italic;
+  text-align: center;
+}
+
+.definition,
+.axiom,
+.proposition {
+  span {
+    position: relative;
+    top: 0.2rem;
+    color: $red;
+    font-weight: 600;
+    font-size: size(h3);
+    margin-left: 2.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.explanation {
+  font-size: size(small);
+  font-weight: 300;
+  span {
+    font-weight: 600;
+  }
+}
+
+.tooltip {
+  border-bottom: 1px dotted $grey;
+  color: $grey;
+  cursor: pointer;
+  &:hover {
+    color: $black;
+  }
+  &-box {
+    position: absolute;
+    top: 3.5rem;
+    background: white;
+    font-size: size(small);
+    padding: 1.5rem;
+    max-width: 20rem;
+    z-index: 1;
+    box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5);
+    border-radius: 0.1rem;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.red {
+  color: $red;
+}

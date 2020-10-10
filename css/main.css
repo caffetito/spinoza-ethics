@@ -1,0 +1,186 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@font-face {
+  font-family: "Florana";
+  src: url("/fonts/florana.eot");
+  src: url("webfont.eot?#iefix") format("embedded-opentype"), url("/fonts/florana.woff2") format("woff2"), url("/fonts/florana.woff") format("woff"), url("/fonts/florana.ttf") format("truetype"), url("/fonts/florana.svg") format("svg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  line-height: 1.5;
+}
+
+ol {
+  list-style-type: upper-roman;
+  text-align: left;
+  padding-top: 10%;
+}
+
+nav {
+  width: 100%;
+  background: white;
+  padding: 0 4em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main {
+  grid-area: main;
+  padding: 3rem;
+}
+
+aside {
+  grid-area: aside;
+  font-size: 16px;
+  font-style: italic;
+  margin: 15rem auto;
+  max-width: 95%;
+  padding: 4rem 1.5rem;
+  border-left: 1px solid black;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
+h1 {
+  font-size: 5.063rem;
+  letter-spacing: 1.5rem;
+}
+
+h2 {
+  font-size: 3.375rem;
+  letter-spacing: 1rem;
+}
+
+h2:first-letter {
+  font-size: 3.875rem;
+}
+
+h3 {
+  font-size: 2.25rem;
+  letter-spacing: 1rem;
+  padding-top: 3.375rem;
+}
+
+h3:first-letter {
+  font-size: 2.75rem;
+}
+
+p {
+  position: relative;
+  padding-top: 1.5rem;
+}
+
+.title {
+  grid-area: title;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+  max-width: 60rem;
+  margin: 0 auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.author {
+  letter-spacing: 1.5rem;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.subhead {
+  font-size: 2.25rem;
+}
+
+.subsubhead {
+  font-size: 1.3rem;
+  color: #1e1e1e;
+}
+
+.secsubhead {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.definition span,
+.axiom span,
+.proposition span {
+  position: relative;
+  top: 0.2rem;
+  color: #cc0001;
+  font-weight: 600;
+  font-size: 2.25rem;
+  margin-left: 2.5rem;
+  margin-right: 0.5rem;
+}
+
+.explanation {
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+
+.explanation span {
+  font-weight: 600;
+}
+
+.tooltip {
+  border-bottom: 1px dotted #7a7a7a;
+  color: #7a7a7a;
+  cursor: pointer;
+}
+
+.tooltip:hover {
+  color: #000;
+}
+
+.tooltip-box {
+  position: absolute;
+  top: 3.5rem;
+  background: white;
+  font-size: 1.3rem;
+  padding: 1.5rem;
+  max-width: 20rem;
+  z-index: 1;
+  -webkit-box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.5);
+  border-radius: 0.1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.red {
+  color: #cc0001;
+}
+/*# sourceMappingURL=main.css.map */
